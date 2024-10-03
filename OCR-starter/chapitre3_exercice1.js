@@ -2,6 +2,7 @@
 
 /*
 1. Stockez le jour actuel (nom du jour, type texte) dans une constante.
+
 2. Écrivez des tests pour stocker dans une variable le nom du jour suivant dans chaque cas de figure :
    - Si le jour actuel est "lundi", alors le jour suivant est "mardi".
    - Si le jour actuel est "mardi", alors le jour suivant est "mercredi".
@@ -14,6 +15,28 @@
 3. Testez si la variable qui contient le nom du jour suivant n'est pas vide, et dans ce cas, affichez dans la console le message "Demain, nous serons …" suivi du nom du jour suivant.
 */
 
+
+
+const day = prompt("Quel jour on est ?")
+let nextDay
+if (day==="lundi"){
+    nextDay ="mardi"
+} else if(day==="mardi"){
+    nextDay="mercredi"
+} else if(day==="mercredi"){
+    nextDay="jeudi"
+} else if(day==="jeudi"){
+    nextDay="vendredi"
+} else if(day==="vendredi"){
+    nextDay="samedi"
+} else if(day==="samedi"){
+    nextDay="dimanche"
+} else if(day==="dimanche"){
+    nextDay="lundi"
+} else {
+    console.log("Veuillez écrire un jour de la semaine tout en minuscule")
+}
+console.log(`Demain nous serons ${nextDay}`)
 // Exemple : si le jour actuel est "mardi", le programme devrait afficher "Demain, nous serons mercredi."
 
 // N'oubliez pas de tester votre programme avec divers jours de la semaine.

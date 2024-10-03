@@ -11,6 +11,8 @@
 
 // 1°) L'opérateur logique ET
 
+
+
 // 1. Affichez dans la console le résultat de toutes les combinaisons possibles de true ET false
 // 2. Avant de lancer votre navigateur et d'ouvrir la console, notez ici pour chaque ligne le résultat attendu dans un commentaire
 
@@ -47,6 +49,10 @@
 // 1°) s'il est négatif, affichez "… est négatif",
 // 2°) sinon, affichez "… est nul"
 
+const nombre = prompt("entrer un nombre")
+
+
+
 // 2°) Autre écriture pour le même test : le if / elseif / else
 
 // BUT : réaliser le même test que l'exercice précédent mais avec l'écriture if / elseif / else
@@ -62,6 +68,28 @@
 // c) Si elle a entre 20 et 30 ans, affichez "… est un jeune homme."
 // d) sinon, affichez "… est un homme."
 
+const firstName = "Yurick";
+const age = 14;
+
+if (age<13){
+    console.log("… est un petit garçon.")
+}
+
+else if (age<=20){
+    console.log("… est un adolescent.")
+}
+
+else if (age<=30){
+    console.log("… est un jeune homme.")
+}
+
+else {
+    console.log("… est un homme.")
+}
+
+
+
+
 // Autre application
 
 // 1. Demandez à l'utilisateur d'entrer l'information
@@ -73,3 +101,22 @@
 // c) s'il pleut, affichez "Sortez en blouson."
 // d) s'il neige, affichez "Restez au chaud à la maison."
 // e) dans tous les autres cas (si la personne n'a
+
+const meteo = prompt("quelle temps fais il dehors ?Répondez par un des \n quatre mots suivants soleil, vent, pluie ou neige. ")
+
+if (meteo==="soleil") {
+    console.log("sorter en t-shirt.")
+}
+else if (meteo==="vent"){
+    console.log("Sortez en pull")
+}
+else if (meteo==="pluie"){
+    console.log("sortez en blouson")
+}
+
+else if (meteo==="neige"){
+    console.log("Restez au chaud à la maison")
+}
+else{
+    console.log("vous n'avez pas mit les bon mots")
+}
